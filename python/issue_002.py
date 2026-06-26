@@ -1,9 +1,8 @@
-user_num=int(input("Enter a number: "))
-if user_num < 13:
-    print("Child")
-elif user_num < 18 :
-    print("Teenager")
-elif user_num <= 64 :
-        print("Adult")
-else :
-    print("Senior")
+user_num = int(input("Enter a number: "))
+
+if user_num == 0:
+    print("The number is zero.")
+elif user_num > 0:
+    print(f"{user_num} is positive.")
+else:
+    print(f"{user_num} is negative.")
