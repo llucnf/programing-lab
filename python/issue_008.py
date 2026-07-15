@@ -1,3 +1,5 @@
+import random
+
 
 
 def check_guess(secret_number, guess):
@@ -8,10 +10,10 @@ def check_guess(secret_number, guess):
         elif guess < secret_number :
             return "higher"
         else:
-            return "correct"
+            return "correct"  
     
                              
-secret_number= 16            
+secret_number = random.randint(1, 100)            
 is_correct= False
 
 while not is_correct :
